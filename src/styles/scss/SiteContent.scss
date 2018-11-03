@@ -1,0 +1,95 @@
+$routeTransitionMs: 500ms;
+$halfRouteTransitionMs: ($routeTransitionMs / 2);
+.route-transition-wrapper {
+  position: relative;
+  flex: 1 0 auto;
+}
+
+.route-transition {
+  width: 100%;
+  position: relative;
+
+  &.route-transition-appear {
+    opacity: 0.01;
+  }
+  
+  &.route-transition-appear.route-transition-appear-active {
+    opacity: 1;
+    transition: opacity $halfRouteTransitionMs linear;
+  }
+
+  &.route-transition-appear-done {
+    opacity: 1;
+  }
+
+  &.route-transition-enter {
+    opacity: 0.01;
+    position: absolute;
+  }
+
+  &.route-transition-enter.route-transition-enter-active {
+    opacity: 1;
+    transition: opacity $halfRouteTransitionMs linear $halfRouteTransitionMs;
+  }
+
+  &.route-transition-enter-done {
+    opacity: 1;
+    position: relative;
+  }
+  
+  &.route-transition-exit {
+    opacity: 1;
+    position: relative;
+  }
+
+  &.route-transition-exit.route-transition-exit-active {
+    opacity: 0.01;
+    transition: opacity $halfRouteTransitionMs linear;
+  }
+
+  &.route-transition-exit-done {
+    opacity: 0.01;
+    position: absolute;
+  }
+
+
+}
+
+// .route-transition-appear, .route-transition-enter {
+//   opacity: 0.01;
+// }
+
+// .route-transition-enter {
+//   opacity: 0.01;
+//   position: absolute;
+// }
+
+// .route-transition-appear.route-transition-appear-active {
+//   opacity: 1;
+//   transition: opacity $halfRouteTransitionMs ease-out;
+// }
+
+// .route-transition-enter.route-transition-enter-active {
+//   position: absolute;
+//   top: 0;
+//   opacity: 1;
+//   transition: opacity $halfRouteTransitionMs ease-out $halfRouteTransitionMs;
+// }
+
+// .route-transition-enter-done {
+//   position: relative;
+// }
+
+// .route-transition-exit {
+//   opacity: 1;
+// }
+
+// .route-transition-exit.route-transition-exit-active {
+//   top: 0;
+//   opacity: 0.01;
+//   transition: opacity $halfRouteTransitionMs ease-out;
+// }
+
+// .route-transition-exit-done {
+//   position: relative;
+// }

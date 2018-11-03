@@ -1,0 +1,45 @@
+.route-transition-wrapper {
+  position: relative;
+  flex: 1 0 auto;
+}
+
+.route-transition {
+  width: 100%;
+  position: relative;
+}
+.route-transition.route-transition-appear {
+  opacity: 0.01;
+}
+.route-transition.route-transition-appear.route-transition-appear-active {
+  opacity: 1;
+  transition: opacity 250ms linear;
+}
+.route-transition.route-transition-appear-done {
+  opacity: 1;
+}
+.route-transition.route-transition-enter {
+  opacity: 0.01;
+  position: absolute;
+}
+.route-transition.route-transition-enter.route-transition-enter-active {
+  opacity: 1;
+  transition: opacity 250ms linear 250ms;
+}
+.route-transition.route-transition-enter-done {
+  opacity: 1;
+  position: relative;
+}
+.route-transition.route-transition-exit {
+  opacity: 1;
+  position: relative;
+}
+.route-transition.route-transition-exit.route-transition-exit-active {
+  opacity: 0.01;
+  transition: opacity 250ms linear;
+}
+.route-transition.route-transition-exit-done {
+  opacity: 0.01;
+  position: absolute;
+}
+
+/*# sourceMappingURL=SiteContent.css.map */

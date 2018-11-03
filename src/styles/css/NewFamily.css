@@ -1,0 +1,15 @@
+.AddFamily {
+  margin-top: 2.5rem;
+}
+.AddFamily input {
+  margin-left: 0.75rem;
+}
+.AddFamily .label--family-members, .AddFamily .button--submit {
+  margin-left: -1rem;
+}
+
+.AddFamily h4 {
+  margin: 1.25rem 0rem;
+}
+
+/*# sourceMappingURL=NewFamily.css.map */
